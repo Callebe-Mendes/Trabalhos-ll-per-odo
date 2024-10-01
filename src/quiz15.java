@@ -95,3 +95,23 @@ public class Trabalho15perguntas {
        perguntas.add(new Pergunta(3, "Qual é o elemento químico com símbolo 'O'?",
                "A - Ouro.", "B - Oxigênio.", "C - Osmônio.", "D - Oxônio.", "E - Platina.", "B"));
        perguntas.add(new Pergunta(4, "Em que ano o homem pisou na Lua pela primeira vez?",
+               "A - 1965.", "B - 1969.", "C - 1972.", "D - 1975.", "E - 1980.", "B"));
+       perguntas.add(new Pergunta(5, "Qual é a capital da Austrália?",
+               "A - Sydney.", "B - Melbourne.", "C - Canberra.", "D - Brisbane.", "E - Adelaide.", "C"));
+       perguntas.add(new Pergunta(6, "Qual é o maior oceano do mundo?",
+               "A - Oceano Atlântico.", "B - Oceano Pacífico.", "C - Oceano Índico.", "D - Oceano Ártico.", "E - Oceano Antártico.", "B"));
+       perguntas.add(new Pergunta(7, "Quem pintou a Mona Lisa?",
+               "A - Vincent van Gogh.", "B - Pablo Picasso.", "C - Leonardo da Vinci.", "D - Michelangelo.", "E - Rembrandt.", "C"));
+       perguntas.add(new Pergunta(8, "Qual é o continente mais populoso?",
+               "A - África.", "B - Europa.", "C - Ásia.", "D - América do Norte.", "E - América do Sul.", "C"));
+       perguntas.add(new Pergunta(9, "Qual é a fórmula química da água?",
+               "A - H2O.", "B - CO2.", "C - NaCl.", "D - CH4.", "E - O2.", "A"));
+       perguntas.add(new Pergunta(10, "Qual é o menor país do mundo em termos de área?",
+               "A - Mônaco.", "B - Nauru.", "C - San Marino.", "D - Vaticano.", "E - Liechtenstein.", "D"));
+       perguntas.add(new Pergunta(11, "Qual é o planeta mais próximo do Sol?",
+               "A - Vênus.", "B - Terra.", "C - Marte.", "D - Mercúrio.", "E - Netuno.", "D"));
+       perguntas.add(new Pergunta(12, "Qual é o maior deserto do mundo?",
+               "A - Deserto do Saara.", "B - Deserto de Gobi.", "C - Deserto de Kalahari.", "D - Deserto da Antártica.", "E - Deserto de Atacama.", "D"));
+       perguntas.add(new Pergunta(13, "Quem foi o primeiro presidente dos Estados Unidos?",
+               "A - George Washington.", "B - Abraham Lincoln.", "C - Thomas Jefferson.", "D - John Adams.", "E - James Madison.", "A"));
+       perguntas.add(new Pergunta(14, "Qual é o símbolo químico do ferro?",
