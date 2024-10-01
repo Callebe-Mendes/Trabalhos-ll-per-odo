@@ -115,3 +115,19 @@ public class Trabalho15perguntas {
        perguntas.add(new Pergunta(13, "Quem foi o primeiro presidente dos Estados Unidos?",
                "A - George Washington.", "B - Abraham Lincoln.", "C - Thomas Jefferson.", "D - John Adams.", "E - James Madison.", "A"));
        perguntas.add(new Pergunta(14, "Qual é o símbolo químico do ferro?",
+               "A - Fe.", "B - F.", "C - Ir.", "D - Fr.", "E - Fl.", "A"));
+       perguntas.add(new Pergunta(15, "Qual é o nome do maior animal terrestre?",
+               "A - Elefante africano.", "B - Girafa.", "C - Baleia azul.", "D - Rinoceronte.", "E - Hipopótamo.", "A"));
+
+       return perguntas;
+   }
+
+   private static class Pergunta {
+       private final int numero;
+       private final String pergunta;
+       private final String opcaoA;
+       private final String opcaoB;
+       private final String opcaoC;
+       private final String opcaoD;
+       private final String opcaoE;
+       private final String respostaCorreta;
