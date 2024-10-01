@@ -54,3 +54,13 @@ public class Trabalho15perguntas {
        int totalPerguntas = 15;
        double porcentagemAcertos = (double) resultado.acertos / totalPerguntas * 100;
        double porcentagemErros = (double) resultado.erros / totalPerguntas * 100;
+
+       System.out.println("=======================================================");
+       System.out.println("Fim do Quiz! Parabéns... Você acertou: " + resultado.acertos + " de " + totalPerguntas + " perguntas.");
+       System.out.println("Você errou: " + resultado.erros + " perguntas.");
+       System.out.println("Porcentagem de acertos: " + String.format("%.2f", porcentagemAcertos) + "%");
+       System.out.println("Porcentagem de erros: " + String.format("%.2f", porcentagemErros) + "%");
+
+       if (resultado.erros > 0) {
+           System.out.println("Perguntas erradas: " + resultado.perguntasErradas);
+       }
