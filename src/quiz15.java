@@ -36,3 +36,21 @@ public class Trabalho15perguntas {
        // Itera sobre as perguntas e acumula o número de acertos e erros
        for (Pergunta pergunta : perguntas) {
 
+           pergunta.exibirPergunta();
+           String resposta = leiaResposta();
+           if (pergunta.verificarResposta(resposta)) {
+               acertos++;
+           } else {
+               erros++;
+               perguntasErradas.add(pergunta.numero);
+           }
+           System.out.println("=========================================================================");
+       }
+
+       return new QuizResultado(acertos, erros, perguntasErradas);
+   }
+
+   private static void exibirMensagemFinal(QuizResultado resultado) {
+       int totalPerguntas = 15;
+       double porcentagemAcertos = (double) resultado.acertos / totalPerguntas * 100;
+       double porcentagemErros = (double) resultado.erros / totalPerguntas * 100;
