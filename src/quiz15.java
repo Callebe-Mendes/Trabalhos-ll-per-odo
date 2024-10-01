@@ -131,3 +131,24 @@ public class Trabalho15perguntas {
        private final String opcaoD;
        private final String opcaoE;
        private final String respostaCorreta;
+
+       public Pergunta(int numero, String pergunta, String opcaoA, String opcaoB, String opcaoC, String opcaoD, String opcaoE, String respostaCorreta) {
+           this.numero = numero;
+           this.pergunta = pergunta;
+           this.opcaoA = opcaoA;
+           this.opcaoB = opcaoB;
+           this.opcaoC = opcaoC;
+           this.opcaoD = opcaoD;
+           this.opcaoE = opcaoE;
+           this.respostaCorreta = respostaCorreta;
+       }
+
+       public boolean verificarResposta(String resposta) {
+           if (resposta.equals(respostaCorreta)) {
+               System.out.println("Resposta correta!");
+               return true;
+           } else {
+               System.out.println("Resposta errada. A resposta correta é: " + respostaCorreta);
+               return false;
+           }
+       }
