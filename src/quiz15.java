@@ -2,11 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class Trabalho15perguntas {
   
  private static final Scanner scanner = new Scanner(System.in);
-
 
    public static void main(String[] args) {
        // Cabeçalho do programa
@@ -152,3 +150,26 @@ public class Trabalho15perguntas {
                return false;
            }
        }
+       public void exibirPergunta() {
+           System.out.println("Questão " + numero + ": " + pergunta);
+           System.out.println("A - " + opcaoA);
+           System.out.println("B - " + opcaoB);
+           System.out.println("C - " + opcaoC);
+           System.out.println("D - " + opcaoD);
+           System.out.println("E - " + opcaoE);
+           System.out.println();
+       }
+   }
+
+   private static class QuizResultado {
+       private final int acertos;
+       private final int erros;
+       private final List<Integer> perguntasErradas;
+
+       public QuizResultado(int acertos, int erros, List<Integer> perguntasErradas) {
+           this.acertos = acertos;
+           this.erros = erros;
+           this.perguntasErradas = perguntasErradas;
+       }
+   }
+}
