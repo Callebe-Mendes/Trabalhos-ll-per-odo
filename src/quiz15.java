@@ -24,3 +24,13 @@ public class Trabalho15perguntas {
        System.out.println("                Bem-vindo ao Quiz!");
        System.out.println("     Responda às perguntas selecionando a opção correta.");
        System.out.println("        As opções de resposta são: A, B, C, D e E.");
+       System.out.println("=======================================================");
+   }
+
+   private static QuizResultado fazerQuiz() {
+       int acertos = 0;
+       int erros = 0;
+       List<Integer> perguntasErradas = new ArrayList<>();
+       List<Pergunta> perguntas = criarPerguntas();
+
+
