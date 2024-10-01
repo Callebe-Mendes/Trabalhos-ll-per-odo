@@ -64,3 +64,34 @@ public class Trabalho15perguntas {
        if (resultado.erros > 0) {
            System.out.println("Perguntas erradas: " + resultado.perguntasErradas);
        }
+       System.out.println("=======================================================");
+   }
+
+   private static String leiaResposta() {
+       String resposta;
+       do {
+           System.out.print("Digite a resposta (A, B, C, D, E): ");
+           resposta = scanner.next().toUpperCase();
+       } while (!respostaValida(resposta));
+       return resposta;
+   }
+
+   private static boolean respostaValida(String resposta) {
+       if (resposta.matches("[A-E]")) {
+           return true;
+       }
+       System.out.println("Resposta inválida. Por favor, digite A, B, C, D ou E.");
+       return false;
+   }
+
+   private static List<Pergunta> criarPerguntas() {
+       List<Pergunta> perguntas = new ArrayList<>();
+
+       perguntas.add(new Pergunta(1, "Qual é o maior planeta do sistema solar?",
+               "A - Marte.", "B - Terra.", "C - Júpiter.", "D - Saturno.", "E - Urano.", "C"));
+       perguntas.add(new Pergunta(2, "Quem escreveu 'Dom Quixote'?",
+               "A - Gabriel García Márquez.", "B - Miguel de Cervantes.", "C - William Shakespeare.",
+               "D - Jorge Luis Borges.", "E - Ernest Hemingway.", "B"));
+       perguntas.add(new Pergunta(3, "Qual é o elemento químico com símbolo 'O'?",
+               "A - Ouro.", "B - Oxigênio.", "C - Osmônio.", "D - Oxônio.", "E - Platina.", "B"));
+       perguntas.add(new Pergunta(4, "Em que ano o homem pisou na Lua pela primeira vez?",
