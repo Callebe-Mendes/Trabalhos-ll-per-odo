@@ -33,4 +33,6 @@ public class Trabalho15perguntas {
        List<Integer> perguntasErradas = new ArrayList<>();
        List<Pergunta> perguntas = criarPerguntas();
 
+       // Itera sobre as perguntas e acumula o número de acertos e erros
+       for (Pergunta pergunta : perguntas) {
 
