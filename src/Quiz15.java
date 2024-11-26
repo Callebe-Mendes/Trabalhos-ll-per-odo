@@ -15,7 +15,7 @@ public class Quiz15 {
         List<Integer> questoesErradas = new ArrayList<>();
         List<Questao> questoes = criarQuestoes();
 
-        // Itera sobre as questões e acumula o número de acertos e erros
+
         for (Questao questao : questoes) {
             questao.exibirQuestao();
             String resposta = leiaResposta();
